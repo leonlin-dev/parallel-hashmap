@@ -1,0 +1,15 @@
+{
+  "name": "parallel-hashmap",
+  "version": "2.0.0",
+  "upstream": "https://github.com/greg7mdp/parallel-hashmap.git",
+  "upstream_ref": "v2.0.0",
+  "kind": "header-only",
+  "install": {
+    "zw_dir": "parallel-hashmap/parallel-hashmap-2.0.0",
+    "copy": [
+      { "from": "parallel_hashmap", "to": "parallel_hashmap", "include": "*.h" },
+      { "from": "parallel_hashmap", "to": ".", "include": "*.h", "compat": "flat copy kept to match the legacy ZW layout; remove once consumers are verified not to need it" }
+    ]
+  },
+  "patches": []
+}
